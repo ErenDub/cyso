@@ -4,17 +4,16 @@ function popup (wid) {
 	let popClose = document.getElementsByClassName ('popup');
 	if (f != 0){
 		for (var i = 0; i < popClose.length; i++){
-			popClose[i].style.opacity = '0';
+            popClose[i].style.display = 'none';
 		}
-		popID.style.opacity = '1';
 	}
 
 	if (f == 0){
-		popID.style.opacity = '1';
+        popID.style.display = 'block';
 		f++;
 	}
 	else{
-		popID.style.opacity = '0';
+        popID.style.display = 'none';
 		f--;
 	}
 }

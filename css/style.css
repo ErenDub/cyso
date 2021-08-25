@@ -21,7 +21,7 @@
   }
   .page_items{
     display: grid;
-    grid-template-columns: auto auto auto auto auto;
+    grid-template-columns: auto auto auto auto;
   }
   .page_item{
       width: 300px;
@@ -75,8 +75,7 @@
     border-bottom-left-radius: 10px;
 	width: 500px;
 	padding: 10px;
-    opacity: 0;
-    transition: opacity .3s;
+    display: none;
   }
   .page-popup-item-text-title{
     text-transform: uppercase;
